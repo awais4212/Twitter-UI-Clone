@@ -1,0 +1,8 @@
+*.json
+*.js
+node_modules/
+dist/
+build/
+logs/
+.cache/
+src/
