@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <title>Home/X</title>
+</head>
+
+<body class="bg-black text-white">
+  <div class="md:container mx-auto my-3 flex flex-col md:flex-row">
+
+    <!-- Sidebar -->
+    <div class="first hidden md:block w-[20%]">
+      <div class="logo invert my-3 w-fit">
+        <svg viewBox="0 0 24 24" aria-hidden="true"
+          class="w-8 m-auto r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
+          <g>
+            <path
+              d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231z">
+            </path>
+          </g>
+        </svg>
+      </div>
+      <div class="sidebar">
+        <ul class="flex flex-col text-2xl space-y-3 md:px-11 font-bold w-full">
+          <li class="flex justify-start items-center gap-3 w-fit px-5 py-3 hover:bg-gray-800 rounded-full cursor-pointer">
+            <span class="material-symbols-outlined text-xl">home</span>Home
+          </li>
+          <li class="flex justify-start items-center gap-3 w-fit px-5 py-3 hover:bg-gray-800 rounded-full cursor-pointer">
+            <span class="material-symbols-outlined text-xl">search</span>Explore
+          </li>
+          <li class="flex justify-start items-center gap-3 w-fit px-5 py-3 hover:bg-gray-800 rounded-full cursor-pointer">
+            <span class="material-symbols-outlined text-xl">notifications</span>Notifications
+          </li>
+          <li class="flex justify-start items-center gap-3 w-fit px-5 py-3 hover:bg-gray-800 rounded-full cursor-pointer">
+            <span class="material-symbols-outlined text-xl">message</span>Messages
+          </li>
+          <li class="flex justify-start items-center gap-3 w-fit px-5 py-3 hover:bg-gray-800 rounded-full cursor-pointer">
+            <span class="material-symbols-outlined text-xl">lists</span>Lists
+          </li>
+          <li class="flex justify-start items-center gap-3 w-fit px-5 py-3 hover:bg-gray-800 rounded-full cursor-pointer">
+            <span class="material-symbols-outlined text-xl">bookmark</span>Bookmarks
+          </li>
+          <li class="flex justify-start items-center gap-3 w-fit px-5 py-3 hover:bg-gray-800 rounded-full cursor-pointer">
+            <span class="material-symbols-outlined text-xl">groups</span>Communities
+          </li>
+          <li class="flex justify-start items-center gap-3 w-fit px-5 py-3 hover:bg-gray-800 rounded-full cursor-pointer">
+            <span class="material-symbols-outlined text-xl">verified</span>Premium
+          </li>
+          <li class="flex justify-start items-center gap-3 w-fit px-5 py-3 hover:bg-gray-800 rounded-full cursor-pointer">
+            <span class="material-symbols-outlined text-xl">person</span>Profile
+          </li>
+          <li class="flex justify-start items-center gap-3 w-fit px-5 py-3 hover:bg-gray-800 rounded-full cursor-pointer">
+            <span class="material-symbols-outlined text-xl">more_horiz</span>More
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Center column -->
+    <div class="second w-full md:w-[55%] border-x border-gray-600">
+      <div class="top flex border-b border-gray-600">
+        <div class="left w-1/2 flex justify-center font-bold text-lg py-3 cursor-pointer">For you</div>
+        <div class="right w-1/2 flex justify-center font-bold text-lg py-3 cursor-pointer">Following</div>
+        <div class="mx-2 settings flex items-center">
+          <span class="material-symbols-outlined">settings</span>
+        </div>
+      </div>
+
+      <!-- What's happening input -->
+      <div class="foryou flex items-center m-3 p-2 gap-3 ">
+        <div class="img">
+          <img class="h-[48px] w-[48px] rounded-full object-cover" src="awais.jpg" alt="User Profile">
+        </div>
+        <div class="p-1 flex-1">
+          <input class="h-7 w-full my-6 outline-none text-xl text-white bg-transparent placeholder-gray-500"
+            type="text" placeholder="What’s happening?!" />
+          <div class="text-blue-600 flex items-center gap-3">
+            <span class="material-symbols-outlined text-blue-600">globe_asia</span>
+            <span>Everyone Can Reply</span>
+          </div>
+        </div>
+      </div>
+      <hr class="bg-gray-900">
+
+      <!-- FEED START -->
+      <div class="posts">
+
+        <!-- Post 1 -->
+        <div class="post flex gap-3 p-4 border-b border-gray-800">
+          <img class="h-[48px] w-[48px] rounded-full object-cover"
+            src="https://randomuser.me/api/portraits/men/45.jpg" alt="profile">
+          <div>
+            <div class="flex gap-2 items-center">
+              <span class="font-bold">Ali Raza</span>
+              <span class="text-gray-500 text-sm">@ali_raza · 2h</span>
+            </div>
+            <p class="text-white">Excited about the new project launch 🚀. Hard work finally paying off!</p>
+          </div>
+        </div>
+
+        <!-- Post 2 -->
+        <div class="post flex gap-3 p-4 border-b border-gray-800">
+          <img class="h-[48px] w-[48px] rounded-full object-cover"
+            src="https://randomuser.me/api/portraits/women/33.jpg" alt="profile">
+          <div>
+            <div class="flex gap-2 items-center">
+              <span class="font-bold">Sara Khan</span>
+              <span class="text-gray-500 text-sm">@sarakhan · 5h</span>
+            </div>
+            <p class="text-white">Weekend vibes 🌸✨ Who else is binge-watching Netflix?</p>
+            <img class="mt-2 rounded-xl max-h-64 object-cover" src="https://picsum.photos/id/237/500/300"
+              alt="post image">
+          </div>
+        </div>
+
+        <!-- Post 3 -->
+        <div class="post flex gap-3 p-4 border-b border-gray-800">
+          <img class="h-[48px] w-[48px] rounded-full object-cover"
+            src="https://randomuser.me/api/portraits/men/76.jpg" alt="profile">
+          <div>
+            <div class="flex gap-2 items-center">
+              <span class="font-bold">Zeeshan</span>
+              <span class="text-gray-500 text-sm">@zeeshan_dev · 1d</span>
+            </div>
+            <p class="text-white">Learning Tailwind CSS is fun. Building a Twitter clone right now 🔥</p>
+          </div>
+        </div>
+
+        <!-- Post 4 -->
+        <div class="post flex gap-3 p-4 border-b border-gray-800">
+          <img class="h-[48px] w-[48px] rounded-full object-cover"
+            src="https://randomuser.me/api/portraits/women/12.jpg" alt="profile">
+          <div>
+            <div class="flex gap-2 items-center">
+              <span class="font-bold">Ayesha Malik</span>
+              <span class="text-gray-500 text-sm">@ayesha_m · 3h</span>
+            </div>
+            <p class="text-white">Can’t believe it’s already October 🍂. Time flies so fast!</p>
+            <img class="mt-2 rounded-xl max-h-64 object-cover" src="https://picsum.photos/id/1015/500/300"
+              alt="post image">
+          </div>
+        </div>
+
+        <!-- Post 5 -->
+        <div class="post flex gap-3 p-4 border-b border-gray-800">
+          <img class="h-[48px] w-[48px] rounded-full object-cover"
+            src="https://randomuser.me/api/portraits/men/88.jpg" alt="profile">
+          <div>
+            <div class="flex gap-2 items-center">
+              <span class="font-bold">Hamza Ali</span>
+              <span class="text-gray-500 text-sm">@hamza_coder · 7h</span>
+            </div>
+            <p class="text-white">Just pushed my first project to GitHub ✅. Feeling proud!</p>
+          </div>
+        </div>
+
+        <!-- Post 6 -->
+        <div class="post flex gap-3 p-4 border-b border-gray-800">
+          <img class="h-[48px] w-[48px] rounded-full object-cover"
+            src="https://randomuser.me/api/portraits/women/47.jpg" alt="profile">
+          <div>
+            <div class="flex gap-2 items-center">
+              <span class="font-bold">Maria Iqbal</span>
+              <span class="text-gray-500 text-sm">@maria_designs · 9h</span>
+            </div>
+            <p class="text-white">UI/UX design is not just about looks, it’s about experience 💡</p>
+            <img class="mt-2 rounded-xl max-h-64 object-cover" src="https://picsum.photos/id/1003/500/300"
+              alt="post image">
+          </div>
+        </div>
+
+        <!-- Post 7 -->
+        <div class="post flex gap-3 p-4 border-b border-gray-800">
+          <img class="h-[48px] w-[48px] rounded-full object-cover"
+            src="https://randomuser.me/api/portraits/men/64.jpg" alt="profile">
+          <div>
+            <div class="flex gap-2 items-center">
+              <span class="font-bold">Usman Tariq</span>
+              <span class="text-gray-500 text-sm">@usman_dev · 12h</span>
+            </div>
+            <p class="text-white">Frontend journey: HTML ✅ CSS ✅ Tailwind ✅ Next: React ⚛️</p>
+          </div>
+        </div>
+
+      </div>
+      <!-- FEED END -->
+    </div>
+
+    <!-- Right column (unchanged) -->
+    <div class="third hidden lg:block w-[25%]">
+      <!-- Search Bar -->
+      <div class="search rounded-full bg-[#16181c] w-[80%] text-white px-4 m-3 flex items-center">
+        <span class="material-symbols-outlined text-xl">search</span>
+        <input type="text" class="w-full bg-transparent border-none outline-none text-white px-2 py-1"
+          placeholder="Search">
+      </div>
+
+      <!-- What's Happening -->
+      <div class="text-xl px-5 py-2 whats m-3 bg-[#16181c] w-[80%] font-bold rounded-xl">
+        <h1 class="text-lg font-bold px-3">What's Happening</h1>
+        <div class="items px-3 p-3 hover:bg-gray-800 cursor-pointer">
+          <div class="text-sm text-gray-500">Trending In Pakistan</div>
+          <div class="font-bold text-sm">#Imran Khan</div>
+          <div class="text-sm text-gray-500">40.2M Posts</div>
+        </div>
+        <div class="items px-3 p-3 hover:bg-gray-800 cursor-pointer">
+          <div class="text-sm text-gray-500">Trending In Pakistan</div>
+          <div class="font-bold text-sm">#Awais</div>
+          <div class="text-sm text-gray-500">40.2k Posts</div>
+        </div>
+        <div class="items px-3 p-3 hover:bg-gray-800 cursor-pointer">
+          <div class="text-sm text-gray-500">Trending In Pakistan</div>
+          <div class="font-bold text-sm">#Flutter</div>
+          <div class="text-sm text-gray-500">40k Posts</div>
+        </div>
+      </div>
+
+      <!-- Who to Follow -->
+      <div class="text-xl px-5 py-2 who m-3 bg-[#16181c] w-[80%] font-bold rounded-xl">
+        <h1 class="text-lg font-bold px-3 my-3 flex gap-2">Who to Follow</h1>
+        <div class="celeb px-3">
+          <!-- Person -->
+          <div class="flex items-center justify-between py-2">
+            <div class="flex items-center gap-3">
+              <img class="h-[40px] w-[40px] rounded-full" src="ik pp.jpg" alt="">
+              <div>
+                <div class="text-white font-semibold text-sm">Imran Khan</div>
+                <div class="text-gray-400 text-xs">@ImranKhanPTI</div>
+              </div>
+            </div>
+            <button
+              class="bg-white text-black px-3 py-1 rounded-full text-sm font-semibold hover:bg-gray-200 transition-colors">
+              Follow
+            </button>
+          </div>
+
+          <div class="border-t border-gray-800 my-2"></div>
+          <div class="text-blue-600 underline my-3 text-sm cursor-pointer">Show More</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
